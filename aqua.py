@@ -1,5 +1,5 @@
 from typing import List, Dict, Tuple
-import random
+
 opp: Dict[int, int] = {i: 7-i for i in range(1, 7)}
     
 opp_name: Dict[str, str] = {"F": "B", "T": "BT", "L": "R"}
