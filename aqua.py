@@ -56,9 +56,9 @@ def face_sum(dirs: str, *dice: Dict[str, int]) -> int:
 
 
 if __name__ == '__main__':
-    die_1 = {"F": 1, "L": 2, "T":3}
-    die_2 = {"F": 5, "L": 4, "T":6}
-    die_3 = {"F": 2, "L": 4, "T":1}
+    die_1 = {"F": 1, "L": 2, "T": 3} 
+    die_2 = {"F": 5, "L": 4, "T": 6}
+    die_3 = {"F": 2, "L": 4, "T": 1}
 
     assert face_sum("LRDLU", die_1, die_1, die_1) == 3
     assert face_sum("", die_1, die_2) == 6
@@ -69,6 +69,6 @@ if __name__ == '__main__':
 
 # User guide
 
-""" Call the face_sum function and pass in the directions as a string of form "ULDLDR" and any number of dice as a dict of form {"BT": 3, "L: 2, "B": 1}
+""" Call the face_sum function and pass in the directions as a string of form "ULDLDR" and any number of dice as a dict of form {"BT": 4, "L": 2, "B": 6}
  T -> Top, BT -> Bottom, F -> Front, B -> Back, L -> Left, R -> Right.
  The function returns the desired sum. """
