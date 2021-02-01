@@ -29,6 +29,7 @@ def reorder_dict(die_map: Dict[str, int], _T: str,  trans: Dict[str, int]) -> di
 
     return trans
 
+
 def get_score(die: Dict[str, int], dirs: str) -> int:
     curr_state: Dict[str, int] = {}
     for s in die:
