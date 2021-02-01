@@ -1,8 +1,6 @@
 from typing import List, Dict, Tuple
-
-opp: Dict[int, int] = {}
-for i in range(1, 7):
-    opp[i] = 7-i
+import random
+opp: Dict[int, int] = {i: 7-i for i in range(1, 7)}
     
 opp_name: Dict[str, str] = {"F": "B", "T": "BT", "L": "R"}
 pairs: List[Tuple[str, str]] = list(opp_name.items())
