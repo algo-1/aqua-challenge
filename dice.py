@@ -1,4 +1,5 @@
 from typing import List, Dict, Tuple
+from copy import deepcopy
 
 opp: Dict[int, int] = {i: 7-i for i in range(1, 7)}
     
@@ -41,7 +42,7 @@ def get_score(die: Dict[str, int], dirs: str) -> int:
 
     trans: Dict[str, int] = {}
     for v in dirs:
-        curr_state = reorder_dict(curr_state, v, trans)
+        curr_state = deepcopy(reorder_dict(curr_state, v, trans))
 
     return curr_state["F"]
 
